@@ -1,0 +1,3 @@
+/Users/crystalwarta/Projects/ResourceManager/build/CMakeFiles/ResourceManager.dir
+/Users/crystalwarta/Projects/ResourceManager/build/CMakeFiles/edit_cache.dir
+/Users/crystalwarta/Projects/ResourceManager/build/CMakeFiles/rebuild_cache.dir

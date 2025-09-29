@@ -184,6 +184,34 @@ CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_opengl2.cpp -o CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.s
 
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o: CMakeFiles/ResourceManager.dir/flags.make
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o: /Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_allegro5.cpp
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o: CMakeFiles/ResourceManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalwarta/Projects/ResourceManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o -MF CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o.d -o CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o -c /Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_allegro5.cpp
+
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_allegro5.cpp > CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.i
+
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_allegro5.cpp -o CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.s
+
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/ResourceManager.dir/flags.make
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o: /Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_glfw.cpp
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/ResourceManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalwarta/Projects/ResourceManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_glfw.cpp
+
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.i
+
+CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.s
+
 # Object files for target ResourceManager
 ResourceManager_OBJECTS = \
 "CMakeFiles/ResourceManager.dir/main.cpp.o" \
@@ -193,7 +221,9 @@ ResourceManager_OBJECTS = \
 "CMakeFiles/ResourceManager.dir/imgui/imgui_widgets.cpp.o" \
 "CMakeFiles/ResourceManager.dir/imgui/imgui_demo.cpp.o" \
 "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_sdl2.cpp.o" \
-"CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.o"
+"CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.o" \
+"CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o" \
+"CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o"
 
 # External object files for target ResourceManager
 ResourceManager_EXTERNAL_OBJECTS =
@@ -206,10 +236,12 @@ ResourceManager: CMakeFiles/ResourceManager.dir/imgui/imgui_widgets.cpp.o
 ResourceManager: CMakeFiles/ResourceManager.dir/imgui/imgui_demo.cpp.o
 ResourceManager: CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_sdl2.cpp.o
 ResourceManager: CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.o
+ResourceManager: CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o
+ResourceManager: CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o
 ResourceManager: CMakeFiles/ResourceManager.dir/build.make
 ResourceManager: /usr/local/Cellar/sdl2/2.32.10/lib/libSDL2.dylib
 ResourceManager: CMakeFiles/ResourceManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalwarta/Projects/ResourceManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ResourceManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalwarta/Projects/ResourceManager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ResourceManager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ResourceManager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

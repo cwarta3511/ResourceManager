@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/usr/local/Cellar/sdl2/2.32.10/include -I/Users/crystalwarta/Projects/ResourceManager/imgui -I/Users/crystalwarta/Projects/ResourceManager/imgui/backends -isystem /usr/local/Cellar/sdl2/2.32.10/include/SDL2
 
-CXX_FLAGS = -std=c++17
+CXX_FLAGS = -g -std=c++17
 

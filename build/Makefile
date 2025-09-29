@@ -129,6 +129,54 @@ ResourceManager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ResourceManager.dir/build.make CMakeFiles/ResourceManager.dir/build
 .PHONY : ResourceManager/fast
 
+imgui/backends/imgui_impl_allegro5.o: imgui/backends/imgui_impl_allegro5.cpp.o
+.PHONY : imgui/backends/imgui_impl_allegro5.o
+
+# target to build an object file
+imgui/backends/imgui_impl_allegro5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ResourceManager.dir/build.make CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o
+.PHONY : imgui/backends/imgui_impl_allegro5.cpp.o
+
+imgui/backends/imgui_impl_allegro5.i: imgui/backends/imgui_impl_allegro5.cpp.i
+.PHONY : imgui/backends/imgui_impl_allegro5.i
+
+# target to preprocess a source file
+imgui/backends/imgui_impl_allegro5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ResourceManager.dir/build.make CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.i
+.PHONY : imgui/backends/imgui_impl_allegro5.cpp.i
+
+imgui/backends/imgui_impl_allegro5.s: imgui/backends/imgui_impl_allegro5.cpp.s
+.PHONY : imgui/backends/imgui_impl_allegro5.s
+
+# target to generate assembly for a file
+imgui/backends/imgui_impl_allegro5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ResourceManager.dir/build.make CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.s
+.PHONY : imgui/backends/imgui_impl_allegro5.cpp.s
+
+imgui/backends/imgui_impl_glfw.o: imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : imgui/backends/imgui_impl_glfw.o
+
+# target to build an object file
+imgui/backends/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ResourceManager.dir/build.make CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : imgui/backends/imgui_impl_glfw.cpp.o
+
+imgui/backends/imgui_impl_glfw.i: imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : imgui/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+imgui/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ResourceManager.dir/build.make CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : imgui/backends/imgui_impl_glfw.cpp.i
+
+imgui/backends/imgui_impl_glfw.s: imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : imgui/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+imgui/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ResourceManager.dir/build.make CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : imgui/backends/imgui_impl_glfw.cpp.s
+
 imgui/backends/imgui_impl_opengl2.o: imgui/backends/imgui_impl_opengl2.cpp.o
 .PHONY : imgui/backends/imgui_impl_opengl2.o
 
@@ -330,6 +378,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ResourceManager"
+	@echo "... imgui/backends/imgui_impl_allegro5.o"
+	@echo "... imgui/backends/imgui_impl_allegro5.i"
+	@echo "... imgui/backends/imgui_impl_allegro5.s"
+	@echo "... imgui/backends/imgui_impl_glfw.o"
+	@echo "... imgui/backends/imgui_impl_glfw.i"
+	@echo "... imgui/backends/imgui_impl_glfw.s"
 	@echo "... imgui/backends/imgui_impl_opengl2.o"
 	@echo "... imgui/backends/imgui_impl_opengl2.i"
 	@echo "... imgui/backends/imgui_impl_opengl2.s"

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_allegro5.cpp" "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o" "gcc" "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o.d"
+  "/Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_glfw.cpp" "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o" "gcc" "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o.d"
   "/Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_opengl2.cpp" "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.o" "gcc" "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.o.d"
   "/Users/crystalwarta/Projects/ResourceManager/imgui/backends/imgui_impl_sdl2.cpp" "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_sdl2.cpp.o" "gcc" "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_sdl2.cpp.o.d"
   "/Users/crystalwarta/Projects/ResourceManager/imgui/imgui.cpp" "CMakeFiles/ResourceManager.dir/imgui/imgui.cpp.o" "gcc" "CMakeFiles/ResourceManager.dir/imgui/imgui.cpp.o.d"

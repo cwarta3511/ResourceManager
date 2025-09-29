@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o"
+  "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_allegro5.cpp.o.d"
+  "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o"
+  "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_glfw.cpp.o.d"
   "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.o"
   "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_opengl2.cpp.o.d"
   "CMakeFiles/ResourceManager.dir/imgui/backends/imgui_impl_sdl2.cpp.o"

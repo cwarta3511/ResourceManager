@@ -20,9 +20,8 @@ CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+//No help, variable specified on the command line.
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -81,8 +80,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+//No help, variable specified on the command line.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/Users/crystalwarta/Projects/ResourceManager/build/CMakeFiles/pkgRedirects
@@ -231,6 +230,12 @@ CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/local/bin/pkg-config
+
 //Value Computed by CMake
 ResourceManager_BINARY_DIR:STATIC=/Users/crystalwarta/Projects/ResourceManager/build
 
@@ -243,11 +248,90 @@ ResourceManager_SOURCE_DIR:STATIC=/Users/crystalwarta/Projects/ResourceManager
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
 
+//Path to a library.
+pkgcfg_lib_ALLEGRO_allegro:FILEPATH=/usr/local/Cellar/allegro/5.2.10.1_2/lib/liballegro.dylib
+
+//Path to a library.
+pkgcfg_lib_ALLEGRO_allegro_font:FILEPATH=/usr/local/Cellar/allegro/5.2.10.1_2/lib/liballegro_font.dylib
+
+//Path to a library.
+pkgcfg_lib_ALLEGRO_allegro_image:FILEPATH=/usr/local/Cellar/allegro/5.2.10.1_2/lib/liballegro_image.dylib
+
+//Path to a library.
+pkgcfg_lib_ALLEGRO_allegro_main:FILEPATH=/usr/local/Cellar/allegro/5.2.10.1_2/lib/liballegro_main.dylib
+
+//Path to a library.
+pkgcfg_lib_ALLEGRO_allegro_primitives:FILEPATH=/usr/local/Cellar/allegro/5.2.10.1_2/lib/liballegro_primitives.dylib
+
+//Path to a library.
+pkgcfg_lib_ALLEGRO_allegro_ttf:FILEPATH=/usr/local/Cellar/allegro/5.2.10.1_2/lib/liballegro_ttf.dylib
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
+ALLEGRO_CFLAGS:INTERNAL=-I/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_CFLAGS_I:INTERNAL=
+ALLEGRO_CFLAGS_OTHER:INTERNAL=
+ALLEGRO_FOUND:INTERNAL=1
+ALLEGRO_INCLUDEDIR:INTERNAL=
+ALLEGRO_INCLUDE_DIRS:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_LDFLAGS:INTERNAL=-L/usr/local/Cellar/allegro/5.2.10.1_2/lib;-lallegro_main;-lallegro_ttf;-lallegro_font;-lallegro_image;-lallegro_primitives;-lallegro
+ALLEGRO_LDFLAGS_OTHER:INTERNAL=
+ALLEGRO_LIBDIR:INTERNAL=
+ALLEGRO_LIBRARIES:INTERNAL=allegro_main;allegro_ttf;allegro_font;allegro_image;allegro_primitives;allegro
+ALLEGRO_LIBRARY_DIRS:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/lib
+ALLEGRO_LIBS:INTERNAL=
+ALLEGRO_LIBS_L:INTERNAL=
+ALLEGRO_LIBS_OTHER:INTERNAL=
+ALLEGRO_LIBS_PATHS:INTERNAL=
+ALLEGRO_MODULE_NAME:INTERNAL=
+ALLEGRO_PREFIX:INTERNAL=
+ALLEGRO_STATIC_CFLAGS:INTERNAL=-I/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_STATIC_CFLAGS_I:INTERNAL=
+ALLEGRO_STATIC_CFLAGS_OTHER:INTERNAL=
+ALLEGRO_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_STATIC_LDFLAGS:INTERNAL=-L/usr/local/Cellar/allegro/5.2.10.1_2/lib;-lallegro_main;-lallegro_ttf;-lallegro_font;-lallegro_image;-lallegro_primitives;-lallegro
+ALLEGRO_STATIC_LDFLAGS_OTHER:INTERNAL=
+ALLEGRO_STATIC_LIBDIR:INTERNAL=
+ALLEGRO_STATIC_LIBRARIES:INTERNAL=allegro_main;allegro_ttf;allegro_font;allegro_image;allegro_primitives;allegro
+ALLEGRO_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/lib
+ALLEGRO_STATIC_LIBS:INTERNAL=
+ALLEGRO_STATIC_LIBS_L:INTERNAL=
+ALLEGRO_STATIC_LIBS_OTHER:INTERNAL=
+ALLEGRO_STATIC_LIBS_PATHS:INTERNAL=
+ALLEGRO_VERSION:INTERNAL=
+ALLEGRO_allegro-5_INCLUDEDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_allegro-5_LIBDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/lib
+ALLEGRO_allegro-5_MODULE_NAME:INTERNAL=allegro-5
+ALLEGRO_allegro-5_PREFIX:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2
+ALLEGRO_allegro-5_VERSION:INTERNAL=5.2.10
+ALLEGRO_allegro_font-5_INCLUDEDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_allegro_font-5_LIBDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/lib
+ALLEGRO_allegro_font-5_MODULE_NAME:INTERNAL=allegro_font-5
+ALLEGRO_allegro_font-5_PREFIX:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2
+ALLEGRO_allegro_font-5_VERSION:INTERNAL=5.2.10
+ALLEGRO_allegro_image-5_INCLUDEDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_allegro_image-5_LIBDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/lib
+ALLEGRO_allegro_image-5_MODULE_NAME:INTERNAL=allegro_image-5
+ALLEGRO_allegro_image-5_PREFIX:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2
+ALLEGRO_allegro_image-5_VERSION:INTERNAL=5.2.10
+ALLEGRO_allegro_main-5_INCLUDEDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_allegro_main-5_LIBDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/lib
+ALLEGRO_allegro_main-5_MODULE_NAME:INTERNAL=allegro_main-5
+ALLEGRO_allegro_main-5_PREFIX:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2
+ALLEGRO_allegro_main-5_VERSION:INTERNAL=5.2.10
+ALLEGRO_allegro_primitives-5_INCLUDEDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_allegro_primitives-5_LIBDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/lib
+ALLEGRO_allegro_primitives-5_MODULE_NAME:INTERNAL=allegro_primitives-5
+ALLEGRO_allegro_primitives-5_PREFIX:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2
+ALLEGRO_allegro_primitives-5_VERSION:INTERNAL=5.2.10
+ALLEGRO_allegro_ttf-5_INCLUDEDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/include
+ALLEGRO_allegro_ttf-5_LIBDIR:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/lib
+ALLEGRO_allegro_ttf-5_MODULE_NAME:INTERNAL=allegro_ttf-5
+ALLEGRO_allegro_ttf-5_PREFIX:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2
+ALLEGRO_allegro_ttf-5_VERSION:INTERNAL=5.2.10
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -308,8 +392,6 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
-CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -389,4 +471,25 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/local/bin/pkg-config][v2.5.1()]
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+__pkg_config_arguments_ALLEGRO:INTERNAL=REQUIRED;allegro-5;allegro_main-5;allegro_font-5;allegro_ttf-5;allegro_image-5;allegro_primitives-5
+__pkg_config_checked_ALLEGRO:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_ALLEGRO_allegro
+pkgcfg_lib_ALLEGRO_allegro-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_ALLEGRO_allegro_font
+pkgcfg_lib_ALLEGRO_allegro_font-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_ALLEGRO_allegro_image
+pkgcfg_lib_ALLEGRO_allegro_image-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_ALLEGRO_allegro_main
+pkgcfg_lib_ALLEGRO_allegro_main-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_ALLEGRO_allegro_primitives
+pkgcfg_lib_ALLEGRO_allegro_primitives-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_ALLEGRO_allegro_ttf
+pkgcfg_lib_ALLEGRO_allegro_ttf-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/local/Cellar/allegro/5.2.10.1_2/lib
 

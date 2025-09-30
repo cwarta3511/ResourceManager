@@ -8,6 +8,37 @@
 #include <mach/mach.h>
 #include <mach/host_info.h>
 
+struct CPUUsage 
+{
+    float user;
+    float sys;
+    float idle;
+};
+
+bool getCPUUsage( CPUUsage &usage ) 
+{
+    host_cpu_load_info_data_t cpuinfo;
+    mach_msg_type_number_t count = HOST_CPU_LOAD_INFO_COUNT;
+
+    kern_return_t kr = host_statistics(mach_host_self(), HOST_CPU_LOAD_INFO, 
+                                    (host_info_t)&cpuinfo, &count);
+    if (kr != KERN_SUCCESS) {
+        std::cerr << "Failed to get CPU info\n";
+        return false;
+    }
+
+    unsigned long totalTicks = cpuinfo.cpu_ticks[CPU_STATE_USER] +
+                               cpuinfo.cpu_ticks[CPU_STATE_SYSTEM] +
+                               cpuinfo.cpu_ticks[CPU_STATE_IDLE] +
+                               cpuinfo.cpu_ticks[CPU_STATE_NICE];
+
+
+    usage.idle = 100.0f * cpuinfo.cpu_ticks[CPU_STATE_IDLE] / totalTicks;
+    usage.user = 100.0f * cpuinfo.cpu_ticks[CPU_STATE_USER] / totalTicks;
+    usage.sys  = 100.0f * cpuinfo.cpu_ticks[CPU_STATE_SYSTEM] / totalTicks;
+
+    return true;
+}
 
 int main(int, char**)
 {
@@ -69,33 +100,17 @@ int main(int, char**)
         ImGui::NewFrame();
 
         {
-            host_cpu_load_info_data_t cpuinfo;
-            mach_msg_type_number_t count = HOST_CPU_LOAD_INFO_COUNT;
-
-            kern_return_t kr = host_statistics(mach_host_self(), HOST_CPU_LOAD_INFO, 
-                                            (host_info_t)&cpuinfo, &count);
-            if (kr != KERN_SUCCESS) {
-                std::cerr << "Failed to get CPU info\n";
+            CPUUsage usage;
+            if(!getCPUUsage( usage ))
                 return 0;
-            }
-
-            unsigned long totalTicks = cpuinfo.cpu_ticks[CPU_STATE_USER] +
-                                       cpuinfo.cpu_ticks[CPU_STATE_SYSTEM] +
-                                       cpuinfo.cpu_ticks[CPU_STATE_IDLE] +
-                                       cpuinfo.cpu_ticks[CPU_STATE_NICE];
-
-
-            float idle = 100.0f * cpuinfo.cpu_ticks[CPU_STATE_IDLE] / totalTicks;
-            float user = 100.0f * cpuinfo.cpu_ticks[CPU_STATE_USER] / totalTicks;
-            float sys  = 100.0f * cpuinfo.cpu_ticks[CPU_STATE_SYSTEM] / totalTicks;
 
             ImGui::SetNextWindowPos(ImVec2(0, 0), ImGuiCond_Always);
 
             ImGui::Begin("CPU Data");
 
-            ImGui::Text("idle %f  ", idle);
-            ImGui::Text("user %f  ", user);
-            ImGui::Text("sys  %f  ", sys);
+            ImGui::Text("idle %f  ", usage.idle);
+            ImGui::Text("user %f  ", usage.user);
+            ImGui::Text("sys  %f  ", usage.sys);
 
             ImGui::End();
         }
